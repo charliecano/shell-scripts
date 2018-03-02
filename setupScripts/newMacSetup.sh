@@ -257,6 +257,7 @@ function mainScript() {
     brew tap caskroom/cask
     # brew tap caskroom/fonts
     brew tap caskroom/versions
+   
   }
 
   function installXcode() {
@@ -322,31 +323,46 @@ function mainScript() {
     LISTINSTALLED="brew cask list"
     INSTALLCOMMAND="brew cask install --appdir=/Applications"
     RECIPES=(
-      alfred
-      arq
+      airfoil
+      atom
+      audio-hijack
       bartender
       betterzipql
-      carbon-copy-cloner
-      controlplane
+      bettertouchtool
+      bonjour-browser
+      charles
+   #   carbon-copy-cloner
+   #   controlplane
       dash
       default-folder-x
-      fantastical
+      etrecheck
+  #   fantastical
+      fing
+      fission
       firefox
       flux
       fluid
+      font-hack-nerd-font
+      get-lyrical
       google-chrome
       hazel
-      houdahgeo
+      historyhound
+      imageoptim
+   #   houdahgeo
       iterm2
       istat-menus
       java
-      marked
-      mailplane
-      moom
-      ngrok
-      nvalt
-      omnifocus
-      omnifocus-clip-o-tron
+      macvim
+      meteorologist
+   #   mailplane
+   #   moom
+      mono-mdk
+   #   ngrok
+   #   nvalt
+   #   omnifocus
+   #   omnifocus-clip-o-tron
+      onyx
+      osxfuse
       1password
       plex-home-theater
       qlcolorcode
@@ -355,15 +371,33 @@ function mainScript() {
       qlstephen
       quicklook-csv
       quicklook-json
-      skitch
-      spillo
-      sublime-text3
-      textexpander
-      trickster
+      radio-silence
+      rar
+      rclone-browser
+      resilio-sync
+      rsyncosx
+      sabnzbd
+      shifty
+      skype
+      soulver
+      soundsource
+      superduper
+      tower
+      unetbootin
+      vagrant
+      vagrant-bar
+      vagrant-manager
+      
+   #   skitch
+   #   spillo
+   #   sublime-text3
+   #   textexpander
+   #   trickster
       vlc
       vyprvpn
       webpquicklook
-      xld
+      wireshark
+   #   xld
     )
 
     # for item in "${RECIPES[@]}"; do
@@ -384,18 +418,18 @@ function mainScript() {
     LISTINSTALLED="mas list"
     INSTALLCOMMAND="mas install"
     RECIPES=(
-      836505650 # Battery Monitor
-      420212497 # Byword
+    #  836505650 # Battery Monitor
+    #  420212497 # Byword
       696977615 # Capo
-      411643860 # DaisyDisk
-      498944723 # JPEGmini
+    #  411643860 # DaisyDisk
+    #  498944723 # JPEGmini
       711830901 # OmniGraffle
       429449079 # Patterns - RegEx Validation
-      445189367 # PopClip
+    #  445189367 # PopClip
       803453959 # Slack
-      403388562 # Transmit
+    #  403388562 # Transmit
       494803304 # WiFi Explorer
-      848311469 # Write
+    #  848311469 # Write
       )
     doInstall
 
@@ -413,16 +447,16 @@ function mainScript() {
     INSTALLCOMMAND="brew cask install --appdir=/Applications"
     RECIPES=(
       charles
-      codekit
-      github
-      imagealpha
+     # codekit
+     # github
+     # imagealpha
       imageoptim
       java
-      kaleidoscope
-      licecap # Movie screen captures
-      mamp # mac-based LAMP development stack
-      paw # REST IDE
-      tower # Mac GUI for git
+     # kaleidoscope
+     # licecap # Movie screen captures
+     # mamp # mac-based LAMP development stack
+     # paw # REST IDE
+     # tower # Mac GUI for git
     )
 
     # for item in "${RECIPES[@]}"; do
@@ -444,48 +478,178 @@ function mainScript() {
     INSTALLCOMMAND="brew install"
 
     RECIPES=(
-      autoconf
-      automake
+      ansible
+      arping
+      #asio
+      #augeas
+      autojump
+      awscli
       bash
       bash-completion
-      colordiff
-      coreutils
-      ffmpeg
-      gifsicle
-      git
-      git-extras
-      git-flow
-      hub
-      hr
-      id3tool
-      imagemagick
-      jpegoptim
-      jq
-      lesspipe
-      libksba
-      libtool
+      #boost
+      brew-cask-completion
+      #bundler-completion
+      #cairo
+      certbot
+      #cmark
+      coffeescript
+      cpp-netlib
+      ctags
+      dep
+      dialog
+      dnstop
+      #docbook
+      #docbook-xsl
+      docker
+      #faac
+      #fd
+      #fdk-aac
+      #ffmpeg
+      #figlet
+      #fish
+      flac
+      fontconfig
+      fping
+      freetype
+      #frei0r
+      #fribidi
+      #fzf
+      #gdbm
+      gem-completion
+      geoip
+      gettext
+      gflags
+      glib
+      glog
+      gmp
+      gnutls
+      go
+      gobject-introspection
+      #graphite2
+      hardlink-osx
+      #harfbuzz
+      highlight
+      htop
+      htop-osx
+      icu4c
+      iftop
+      innotop
+      ipcalc
+      jemalloc
+      jenv
+      jnettop
+      jpeg
+      #kitchen-completion
+      lame
+      libarchive
+      libass
+      libav
+      libbluray
+      libbluray
+      libcaca
+      libconfig
+      libebml
+      libevent
+      libffi
+      libgtop
+      libidn2
+      libmagic
+      libmatroska
+      libnet
+      libogg
+      libpng
+      librdkafka
+      libressl
+      libsoxr
+      libssh
+      libtasn1
+      libtiff
+      libunistring
+      libvidstab
+      libvorbis
+      libvpx
+      libxml2
       libyaml
+      little-cms2
+      lldpd
+      #logstash
+      lua
+      lz4
+      lzlib
       mackup
-      man2html
-      multimarkdown
+      mas
+      mkvtoolnix
+      mtr
+      #mysql
+      nasm
+      ncurses
+      nettle
+      ngrep
+      nmap
       node
+      #opencore-amr
+      openjpeg
+      openssh
       openssl
-      optipng
+      openssl@1.1
+      #opus
+      osquery
+      p11-kit
+      packer
+      packer-completion
+      pcre
+      pcre2
+      pip-completion
+      #pixman
       pkg-config
-      pngcrush
-      p7zip
+      pstree
+      pugixml
+      pv
+      python
+      python3
+      qemu
+      qt
+      rapidjson
+      rclone
       readline
-      rename
-      shellcheck          # Bash linter
-      sl
-      source-highlight
-      ssh-copy-id
+      #reattach-to-user-namespace
+      @rlwraprocksdb
+      #rtmpdump
+      #sdl2
+      shellcheck
+      sleuthkit
+      snappy
+      sntop
+      #speex
       sqlite
+      ssh-copy-id
+      sshuttle
+      sslh
+      stormssh
+      stormssh-completion
+      swig
       tag
       terminal-notifier
-      tldr                # Better man pages
+      texi2html
+      the_silver_searcher
+      theora
+      thrift
+      tldr
+      tmux
+      tmux-cssh
+      tmuxinator-completion
       tree
-      unison              # Rsynch like tool
+      unar
+      utf8proc
+      vagrant-completion
+      webp
+      wget
+      x264
+      x265
+      xvid
+      xz
+      #yara
+      #zstd 
     )
     doInstall
 
@@ -652,11 +816,11 @@ function mainScript() {
   installHomebrewPackages
   installCaskApps
   installAppStoreApps
-  installDevApps
-  installRuby
-  installRubyGems
-  configureSSH
-  configureMackup
+  #installDevApps
+  #installRuby
+  #installRubyGems
+  #configureSSH
+  #configureMackup
 }
 
 ## SET SCRIPTNAME VARIABLE ##
